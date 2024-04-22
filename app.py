@@ -10,7 +10,7 @@ logging.basicConfig(filename='log.txt', level=logging.DEBUG, format='%(asctime)s
 
 app = Flask(__name__)
 
-api_doc(app, config_path='config\swagger.json', url_prefix='/api/doc', title='API doc')
+api_doc(app, config_path='docs\swagger.json', url_prefix='/api/doc', title='API doc')
 
 
 guid = uuid.uuid4()
@@ -109,7 +109,7 @@ def update_character():
 
 def get_character():
     data = request.json
-    required_fields = ['id']
+    required_fields = ['character_token']
     for field in required_fields:
         if field not in data:
             app.logger.error(f"Missing required field: {field}")
@@ -118,12 +118,12 @@ def get_character():
         app.logger.error("Invalid data types")
         return jsonify({"error": "Invalid data types"}), 400
     try:
-            id = data.get('id')
+            character_token = data.get('character_token')
     except Exception as e:
         app.logger.error('Unable to load character data: %s', str(e))
         return jsonify({"error": str(e)}), 400
     try:
-        character = get_char(id)
+        character = get_char(character_token)
         return jsonify(character)
     except Exception as e:
         app.logger.error('Unable to get character character in DB: %s', str(e))

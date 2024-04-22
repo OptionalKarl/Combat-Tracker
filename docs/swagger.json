@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "D&D Character Tracker API",
-    "description": "API for managing characters and initiative tracking in a D&D game",
-    "version": "1.0"
+    "description": "API for managing characters, initiative tracking, and campaign encounters in a D&D game",
+    "version": "1.2"
   },
-  "basePath": "/",
+  "basePath": "/api",
   "paths": {
     "/": {
       "get": {
@@ -13,13 +13,16 @@
         "description": "Default endpoint",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
           }
         }
       }
     },
     "/new-encounter": {
-      "get": {
+      "post": {
         "summary": "Reset Initiative",
         "description": "Reset initiative for a new encounter",
         "responses": {
@@ -90,7 +93,7 @@
     },
     "/character": {
       "post": {
-        "summary": "Update Characters",
+        "summary": "Update Character",
         "description": "Update or insert a character's information",
         "consumes": [
           "application/json"
@@ -103,6 +106,9 @@
             "schema": {
               "type": "object",
               "properties": {
+                "character_token": {
+                  "type": "string"
+                },
                 "name": {
                   "type": "string"
                 },
@@ -143,19 +149,7 @@
                 }
               }
             }
-          },
-          "422": {
-            "description": "Unprocessable Entity",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Invalid data types"
-                }
-              }
-            }
-          },
+          },         
           "500": {
             "description": "Internal Server Error",
             "schema": {
@@ -171,34 +165,67 @@
         }
       },
       "get": {
-        "description": "",
+        "summary": "Get Character",
+        "description": "Retrieve character information by ID",
         "parameters": [
           {
-            "in": "body",
-            "name": "character",
-            "description": "Character id",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "integer"
-                }
-              }
-            }
+            "in": "query",
+            "name": "character_token",
+            "description": "ID of the character to retrieve",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Character Retrieved Successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "character_token": {
+                  "type": "string" 
+                },
+                "name": {
+                  "type": "string"
+                },
+                "AC": {
+                  "type": "integer"
+                },
+                "class": {
+                  "type": "string"
+                },
+                "Initiative": {
+                  "type": "integer"
+                }
+              }
+            }
           },
           "400": {
-            "description": "Missing id field"
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "Missing required field: id"
+                }
+              }
+            }
           },
-          "422": {
-            "description": "UNable to load character data"
-          },
-          "500":{
-            "description": "Unable to retrieve character from DB"
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "Internal Server Error: <error_message>"
+                }
+              }
+            }
           }
         }
       }
