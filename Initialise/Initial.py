@@ -12,7 +12,8 @@ cursor = conn.cursor()
 if not table_exists('character', conn):
     cursor.execute('''
         CREATE TABLE character (
-            ID Integer PRIMARY KEY,
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            Character_token TEXT,
             Name TEXT,
             AC INTEGER,
             Class TEXT,
@@ -23,7 +24,8 @@ if not table_exists('character', conn):
 if not table_exists('campaign', conn):
     cursor.execute('''
         CREATE TABLE campaign (
-            ID Integer PRIMARY KEY,
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            Campaign_token TEXT,
             Name TEXT,
             Setting TEXT,
             Description TEXT            
@@ -34,7 +36,7 @@ if not table_exists('campaign', conn):
 if not table_exists('campaign_character', conn):
     cursor.execute('''
         CREATE TABLE campaign_character (
-            ID INTEGER PRIMARY KEY,
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
             campaign_ID INTEGER,
             character_ID INTEGER
 

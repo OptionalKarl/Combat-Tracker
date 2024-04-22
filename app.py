@@ -1,7 +1,8 @@
 import logging;
 from flask import Flask, request, jsonify, session;
 import uuid;
-from messages import get_next_combatant, check_for_char, update_char, insert_char, get_char;
+from character_queries import check_for_char, update_char, insert_char, get_char;
+from Initiative_queries import get_next_combatant;
 from swagger_ui import api_doc;
 
 
@@ -23,7 +24,7 @@ def home():
     app.logger.info('Home endpoint accessed')
     return "Home"
 
-@app.route("/new-encounter")
+@app.route("/new-encounter", methods = ["POST"])
 def new_encounter():
     try:
         session['current_initiative'] = 99
@@ -55,7 +56,7 @@ def characters():
 def update_character():
     data = request.json
 
-    required_fields = ['name', 'ac', 'class', 'initiative']
+    required_fields = ['character_token','name', 'ac', 'class', 'initiative']
     for field in required_fields:
         if field not in data:
             app.logger.error(f"Missing required field: {field}")
@@ -74,13 +75,14 @@ def update_character():
             return jsonify({"error": "Name or class exceeds maximum length of 32 characters"}), 400
 
     try:
+        character_token = data.get('character_token')
         name = data.get('name')
         ac = data.get('ac')
         char_class = data.get('class')
         initiative = data.get('initiative')
     except Exception as e:
         app.logger.error('Unable to load character data: %s', str(e))
-        return jsonify({"error": str(e)}), 422
+        return jsonify({"error": str(e)}), 400
     
     try:
         char_exists, id = check_for_char(name)
@@ -98,12 +100,12 @@ def update_character():
             return jsonify({"message": "Unable to update Character"}), 500
     else:
         try:
-            insert_char(name, ac, char_class, initiative)
+            token  = insert_char(character_token, name, ac, char_class, initiative)
             app.logger.info('New character %s added successfully', name)
             return jsonify({"message": "Character added successfully"}), 200
         except Exception as e:
             app.logger.error('New character failed to update: %s', e)
-            return jsonify({"message": "Character not added"}), 500
+            return jsonify({"message": f"Character not added, character token: {token}"  }), 500
 
 def get_character():
     data = request.json
@@ -119,7 +121,7 @@ def get_character():
             id = data.get('id')
     except Exception as e:
         app.logger.error('Unable to load character data: %s', str(e))
-        return jsonify({"error": str(e)}), 422
+        return jsonify({"error": str(e)}), 400
     try:
         character = get_char(id)
         return jsonify(character)

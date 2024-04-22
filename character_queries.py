@@ -1,10 +1,13 @@
-import sqlite3
-from flask import session
+import sqlite3;
+import random;
+import uuid;
 
 def connect_to_database():
     conn = sqlite3.connect('Tracker.db')
     cursor = conn.cursor()
     return conn, cursor
+
+
 
 def get_next_combatant(initiative, connection = None):
     try:
@@ -35,14 +38,14 @@ def get_next_combatant(initiative, connection = None):
         print(f"Error in get_next_combatant: {e}")
         raise e
 
-def check_for_char(name, connection = None):
+def check_for_char(token, connection = None):
     try:
         if connection == None:
             conn, cursor = connect_to_database()
         else:
             conn = connection.conn
             cursor = connection.cursor
-        query = 'SELECT ID FROM character WHERE name = "{name}"'.format(name=name)
+        query = 'SELECT ID FROM character WHERE character_token = "{token}"'.format(token=token)
         cursor.execute(query)
         existing_character = cursor.fetchone()
         if connection == None:
@@ -67,7 +70,7 @@ def update_char(id, name, ac, char_class, initiative, connection = None):
             UPDATE character
             SET AC = {ac},name = "{name}", class = "{char_class}", initiative = {initiative}
             WHERE id = {id}
-            '''.format(id=id, ac=ac, char_class=char_class, initiative=initiative, name=name)
+            '''.format(ac=ac, char_class=char_class, initiative=initiative, name=name,id=id)
 
         cursor.execute(query)
         conn.commit()
@@ -84,36 +87,31 @@ def insert_char(name, ac, char_class, initiative, connection = None):
         else:
             conn = connection.conn
             cursor = connection.cursor
-        query_select = 'Select Max(ID) from character'
-        cursor.execute(query_select)
-        result = cursor.fetchone()
-        if bool(result[0]):
-            newID = result[0]
-        else:
-            newID = 1
 
-        query_insert = '''
-            INSERT INTO character (ID, name, AC, class, Initiative)
-            VALUES ({id}, "{name}", {ac},"{char_class}", {init})
-            '''.format(id=newID, name=name, ac=ac, char_class=char_class, init=initiative)
+        character_token = str(uuid.uuid4())
+        query = '''
+            INSERT INTO character (character_token, name, AC, class, Initiative)
+            VALUES ("{character_token}", "{name}", {ac},"{char_class}", {init})
+            '''.format(character_token=character_token, name=name, ac=ac, char_class=char_class, init=initiative)
 
-        cursor.execute(query_insert)
+        cursor.execute(query)
         conn.commit()
         if connection == None:
             conn.close()
+        return character_token
     except Exception as e:
         print(f"Error in insert_char: {e}")
         raise e
 
-def get_char(id, connection=None):
+def get_char(character_token, connection=None):
     if connection == None:
         conn, cursor = connect_to_database()
     else:
         conn = connection.conn
         cursor = connection.cursor
     query = '''
-        Select * from character where ID = {id}
-        '''.format(id = id)
+        Select * from character where character_token = {character_token}
+        '''.format(character_token = character_token)
     try:
         cursor.execute(query)
         character = cursor.fetchone()
