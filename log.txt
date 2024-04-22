@@ -1,0 +1,660 @@
+2024-04-20 21:24:23,375 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:24:23,375 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:24:23,375 - INFO -  * Restarting with stat
+2024-04-20 21:24:23,469 - WARNING -  * Debugger is active!
+2024-04-20 21:24:23,474 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:24:31,312 - INFO - 127.0.0.1 - - [20/Apr/2024 21:24:31] "[33mGET /new HTTP/1.1[0m" 404 -
+2024-04-20 21:24:57,670 - INFO - Initiative reset successfully
+2024-04-20 21:24:57,672 - INFO - 127.0.0.1 - - [20/Apr/2024 21:24:57] "GET /new-encounter HTTP/1.1" 200 -
+2024-04-20 21:25:25,165 - INFO - Next combatant retrieved
+2024-04-20 21:25:25,166 - INFO - 127.0.0.1 - - [20/Apr/2024 21:25:25] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:25:26,145 - INFO - Next combatant retrieved
+2024-04-20 21:25:26,146 - INFO - 127.0.0.1 - - [20/Apr/2024 21:25:26] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:25:27,101 - INFO - Next combatant retrieved
+2024-04-20 21:25:27,103 - INFO - 127.0.0.1 - - [20/Apr/2024 21:25:27] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:28:33,139 - INFO - 127.0.0.1 - - [20/Apr/2024 21:28:33] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:29:35,035 - INFO - 127.0.0.1 - - [20/Apr/2024 21:29:35] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:31:18,086 - INFO - 127.0.0.1 - - [20/Apr/2024 21:31:18] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:33:48,790 - INFO - 127.0.0.1 - - [20/Apr/2024 21:33:48] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:35:54,044 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:35:54,070 - INFO -  * Restarting with stat
+2024-04-20 21:35:54,181 - WARNING -  * Debugger is active!
+2024-04-20 21:35:54,185 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:35:56,846 - INFO - Next combatant retrieved
+2024-04-20 21:35:56,848 - INFO - 127.0.0.1 - - [20/Apr/2024 21:35:56] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:35:59,094 - INFO - Next combatant retrieved
+2024-04-20 21:35:59,095 - INFO - 127.0.0.1 - - [20/Apr/2024 21:35:59] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:35:59,796 - INFO - Next combatant retrieved
+2024-04-20 21:35:59,796 - INFO - 127.0.0.1 - - [20/Apr/2024 21:35:59] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:36:00,507 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:00] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:36:02,780 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:02] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:36:03,751 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:03] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:36:04,467 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:04] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:36:19,194 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:19] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:36:34,982 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:36:34,982 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:36:34,983 - INFO -  * Restarting with stat
+2024-04-20 21:36:35,074 - WARNING -  * Debugger is active!
+2024-04-20 21:36:35,078 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:36:44,910 - INFO - Next combatant retrieved
+2024-04-20 21:36:44,910 - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:44] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:01,186 - INFO - Next combatant retrieved
+2024-04-20 21:37:01,188 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:01] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:06,981 - INFO - Next combatant retrieved
+2024-04-20 21:37:06,983 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:06] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:11,320 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:11] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:37:27,331 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:37:27,354 - INFO -  * Restarting with stat
+2024-04-20 21:37:27,455 - WARNING -  * Debugger is active!
+2024-04-20 21:37:27,459 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:37:31,395 - INFO - Next combatant retrieved
+2024-04-20 21:37:31,395 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:31] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:32,607 - INFO - Next combatant retrieved
+2024-04-20 21:37:32,607 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:32] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:33,349 - INFO - Next combatant retrieved
+2024-04-20 21:37:33,350 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:33] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:37:34,055 - INFO - 127.0.0.1 - - [20/Apr/2024 21:37:34] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:38:05,316 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:38:05,341 - INFO -  * Restarting with stat
+2024-04-20 21:38:05,443 - WARNING -  * Debugger is active!
+2024-04-20 21:38:05,447 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:38:11,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:38:11,993 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:38:11,993 - INFO -  * Restarting with stat
+2024-04-20 21:38:12,086 - WARNING -  * Debugger is active!
+2024-04-20 21:38:12,090 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:38:21,886 - INFO - Next combatant retrieved
+2024-04-20 21:38:21,888 - INFO - 127.0.0.1 - - [20/Apr/2024 21:38:21] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:38:22,732 - INFO - Next combatant retrieved
+2024-04-20 21:38:22,732 - INFO - 127.0.0.1 - - [20/Apr/2024 21:38:22] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:38:23,576 - INFO - Next combatant retrieved
+2024-04-20 21:38:23,577 - INFO - 127.0.0.1 - - [20/Apr/2024 21:38:23] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:38:24,249 - INFO - Next combatant retrieved
+2024-04-20 21:38:24,277 - INFO - 127.0.0.1 - - [20/Apr/2024 21:38:24] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:42:23,700 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:42:23,721 - INFO -  * Restarting with stat
+2024-04-20 21:42:23,824 - WARNING -  * Debugger is active!
+2024-04-20 21:42:23,828 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:42:32,603 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:42:32,603 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:42:32,603 - INFO -  * Restarting with stat
+2024-04-20 21:42:32,699 - WARNING -  * Debugger is active!
+2024-04-20 21:42:32,703 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:42:41,252 - INFO - Next combatant retrieved
+2024-04-20 21:42:41,253 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:41] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:42:42,174 - INFO - Next combatant retrieved
+2024-04-20 21:42:42,175 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:42] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:42:42,815 - INFO - Next combatant retrieved
+2024-04-20 21:42:42,816 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:42] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:42:43,500 - INFO - Next combatant retrieved
+2024-04-20 21:42:43,524 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:43] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:42:44,315 - INFO - Next combatant retrieved
+2024-04-20 21:42:44,333 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:44] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:42:45,313 - INFO - Next combatant retrieved
+2024-04-20 21:42:45,322 - INFO - 127.0.0.1 - - [20/Apr/2024 21:42:45] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:43:08,693 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:43:08,713 - INFO -  * Restarting with stat
+2024-04-20 21:43:08,813 - WARNING -  * Debugger is active!
+2024-04-20 21:43:08,817 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:43:15,477 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:43:15,477 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:43:15,477 - INFO -  * Restarting with stat
+2024-04-20 21:43:15,572 - WARNING -  * Debugger is active!
+2024-04-20 21:43:15,576 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:43:19,771 - INFO - Next combatant retrieved
+2024-04-20 21:43:19,772 - INFO - 127.0.0.1 - - [20/Apr/2024 21:43:19] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:43:20,905 - INFO - Next combatant retrieved
+2024-04-20 21:43:20,906 - INFO - 127.0.0.1 - - [20/Apr/2024 21:43:20] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:43:21,698 - INFO - Next combatant retrieved
+2024-04-20 21:43:21,699 - INFO - 127.0.0.1 - - [20/Apr/2024 21:43:21] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:43:22,724 - INFO - Next combatant retrieved
+2024-04-20 21:43:22,749 - INFO - 127.0.0.1 - - [20/Apr/2024 21:43:22] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:44:12,941 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:44:12,965 - INFO -  * Restarting with stat
+2024-04-20 21:44:13,066 - WARNING -  * Debugger is active!
+2024-04-20 21:44:13,070 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:44:17,169 - INFO - Next combatant retrieved
+2024-04-20 21:44:17,170 - INFO - 127.0.0.1 - - [20/Apr/2024 21:44:17] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:44:18,461 - INFO - Next combatant retrieved
+2024-04-20 21:44:18,462 - INFO - 127.0.0.1 - - [20/Apr/2024 21:44:18] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:44:19,108 - INFO - Next combatant retrieved
+2024-04-20 21:44:19,109 - INFO - 127.0.0.1 - - [20/Apr/2024 21:44:19] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:44:19,746 - INFO - Next combatant retrieved
+2024-04-20 21:44:19,767 - INFO - 127.0.0.1 - - [20/Apr/2024 21:44:19] "[35m[1mGET /next-combatant HTTP/1.1[0m" 500 -
+2024-04-20 21:45:06,301 - INFO -  * Detected change in '/Users/karlmearns/Tracker/main.py', reloading
+2024-04-20 21:45:06,321 - INFO -  * Restarting with stat
+2024-04-20 21:45:06,421 - WARNING -  * Debugger is active!
+2024-04-20 21:45:06,425 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:45:07,455 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:45:07,472 - INFO -  * Restarting with stat
+2024-04-20 21:45:07,573 - WARNING -  * Debugger is active!
+2024-04-20 21:45:07,577 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:45:13,963 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:45:13,963 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:45:13,964 - INFO -  * Restarting with stat
+2024-04-20 21:45:14,059 - WARNING -  * Debugger is active!
+2024-04-20 21:45:14,063 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:45:20,772 - INFO - Next combatant retrieved
+2024-04-20 21:45:20,774 - INFO - 127.0.0.1 - - [20/Apr/2024 21:45:20] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:45:21,495 - INFO - Next combatant retrieved
+2024-04-20 21:45:21,496 - INFO - 127.0.0.1 - - [20/Apr/2024 21:45:21] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:45:22,344 - INFO - Next combatant retrieved
+2024-04-20 21:45:22,344 - INFO - 127.0.0.1 - - [20/Apr/2024 21:45:22] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:45:22,991 - INFO - Next combatant retrieved
+2024-04-20 21:45:22,992 - INFO - 127.0.0.1 - - [20/Apr/2024 21:45:22] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:45:26,089 - INFO - Next combatant retrieved
+2024-04-20 21:45:26,090 - INFO - 127.0.0.1 - - [20/Apr/2024 21:45:26] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-20 21:46:07,898 - INFO - 127.0.0.1 - - [20/Apr/2024 21:46:07] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:47:35,270 - INFO - 127.0.0.1 - - [20/Apr/2024 21:47:35] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:47:41,877 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:47:41,894 - INFO -  * Restarting with stat
+2024-04-20 21:47:41,993 - WARNING -  * Debugger is active!
+2024-04-20 21:47:41,997 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:48:10,870 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:48:10,870 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:48:10,870 - INFO -  * Restarting with stat
+2024-04-20 21:48:10,968 - WARNING -  * Debugger is active!
+2024-04-20 21:48:10,972 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:48:17,809 - INFO - Character Dave updated successfully
+2024-04-20 21:48:17,809 - INFO - 127.0.0.1 - - [20/Apr/2024 21:48:17] "POST /update-characters HTTP/1.1" 200 -
+2024-04-20 21:48:34,035 - INFO - 127.0.0.1 - - [20/Apr/2024 21:48:34] "[35m[1mPOST /update-characters HTTP/1.1[0m" 500 -
+2024-04-20 21:52:54,729 - INFO -  * Detected change in '/Users/karlmearns/Tracker/Messages.py', reloading
+2024-04-20 21:52:54,743 - INFO -  * Restarting with stat
+2024-04-20 21:53:07,675 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:53:07,675 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:53:07,675 - INFO -  * Restarting with stat
+2024-04-20 21:53:07,768 - WARNING -  * Debugger is active!
+2024-04-20 21:53:07,772 - INFO -  * Debugger PIN: 749-396-229
+2024-04-20 21:53:15,298 - INFO - New character Judge Dredd added successfully
+2024-04-20 21:53:15,300 - INFO - 127.0.0.1 - - [20/Apr/2024 21:53:15] "POST /update-characters HTTP/1.1" 200 -
+2024-04-20 21:55:18,407 - INFO - Next combatant retrieved
+2024-04-20 21:55:18,408 - INFO - 127.0.0.1 - - [20/Apr/2024 21:55:18] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 09:07:00,829 - INFO -  * Detected change in '/Users/karlmearns/Tracker/main.py', reloading
+2024-04-21 09:07:00,850 - INFO -  * Restarting with stat
+2024-04-21 09:07:00,995 - WARNING -  * Debugger is active!
+2024-04-21 09:07:01,002 - INFO -  * Debugger PIN: 749-396-229
+2024-04-21 21:30:24,599 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-21 21:30:24,599 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-21 21:30:24,608 - INFO -  * Restarting with stat
+2024-04-21 21:30:24,926 - WARNING -  * Debugger is active!
+2024-04-21 21:30:24,933 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:30:46,440 - INFO - Home endpoint accessed
+2024-04-21 21:30:46,440 - INFO - 127.0.0.1 - - [21/Apr/2024 21:30:46] "GET / HTTP/1.1" 200 -
+2024-04-21 21:30:46,924 - INFO - 127.0.0.1 - - [21/Apr/2024 21:30:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-21 21:31:28,637 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:31:28,674 - INFO -  * Restarting with stat
+2024-04-21 21:31:28,983 - WARNING -  * Debugger is active!
+2024-04-21 21:31:28,990 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:35:38,466 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:35:38,510 - INFO -  * Restarting with stat
+2024-04-21 21:35:38,820 - WARNING -  * Debugger is active!
+2024-04-21 21:35:38,827 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:35:50,126 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:35:50,160 - INFO -  * Restarting with stat
+2024-04-21 21:35:50,484 - WARNING -  * Debugger is active!
+2024-04-21 21:35:50,491 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:26,618 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:26,650 - INFO -  * Restarting with stat
+2024-04-21 21:36:26,984 - WARNING -  * Debugger is active!
+2024-04-21 21:36:26,990 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:28,277 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:28,312 - INFO -  * Restarting with stat
+2024-04-21 21:36:28,635 - WARNING -  * Debugger is active!
+2024-04-21 21:36:28,642 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:29,955 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:29,991 - INFO -  * Restarting with stat
+2024-04-21 21:36:30,306 - WARNING -  * Debugger is active!
+2024-04-21 21:36:30,312 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:32,753 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:32,788 - INFO -  * Restarting with stat
+2024-04-21 21:36:33,108 - WARNING -  * Debugger is active!
+2024-04-21 21:36:33,115 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:34,403 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:34,434 - INFO -  * Restarting with stat
+2024-04-21 21:36:34,747 - WARNING -  * Debugger is active!
+2024-04-21 21:36:34,752 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:36,090 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:36,133 - INFO -  * Restarting with stat
+2024-04-21 21:36:36,486 - WARNING -  * Debugger is active!
+2024-04-21 21:36:36,494 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:38,953 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:38,982 - INFO -  * Restarting with stat
+2024-04-21 21:36:39,307 - WARNING -  * Debugger is active!
+2024-04-21 21:36:39,314 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:40,646 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:40,677 - INFO -  * Restarting with stat
+2024-04-21 21:36:40,999 - WARNING -  * Debugger is active!
+2024-04-21 21:36:41,005 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:43,404 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:43,431 - INFO -  * Restarting with stat
+2024-04-21 21:36:43,735 - WARNING -  * Debugger is active!
+2024-04-21 21:36:43,741 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:45,076 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:45,105 - INFO -  * Restarting with stat
+2024-04-21 21:36:45,428 - WARNING -  * Debugger is active!
+2024-04-21 21:36:45,436 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:50,081 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:50,114 - INFO -  * Restarting with stat
+2024-04-21 21:36:50,419 - WARNING -  * Debugger is active!
+2024-04-21 21:36:50,424 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:36:57,234 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:36:57,263 - INFO -  * Restarting with stat
+2024-04-21 21:36:57,573 - WARNING -  * Debugger is active!
+2024-04-21 21:36:57,578 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:37:04,431 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:37:04,467 - INFO -  * Restarting with stat
+2024-04-21 21:37:04,783 - WARNING -  * Debugger is active!
+2024-04-21 21:37:04,790 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:37:07,236 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:37:07,269 - INFO -  * Restarting with stat
+2024-04-21 21:37:07,612 - WARNING -  * Debugger is active!
+2024-04-21 21:37:07,619 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:37:25,651 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:37:25,683 - INFO -  * Restarting with stat
+2024-04-21 21:37:26,008 - WARNING -  * Debugger is active!
+2024-04-21 21:37:26,014 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:37:29,565 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:37:29,606 - INFO -  * Restarting with stat
+2024-04-21 21:37:29,920 - WARNING -  * Debugger is active!
+2024-04-21 21:37:29,926 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:38:45,585 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:38:45,616 - INFO -  * Restarting with stat
+2024-04-21 21:38:45,921 - WARNING -  * Debugger is active!
+2024-04-21 21:38:45,927 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:38:51,652 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:38:51,685 - INFO -  * Restarting with stat
+2024-04-21 21:38:52,015 - WARNING -  * Debugger is active!
+2024-04-21 21:38:52,020 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:38:54,449 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:38:54,492 - INFO -  * Restarting with stat
+2024-04-21 21:38:54,797 - WARNING -  * Debugger is active!
+2024-04-21 21:38:54,802 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:38:57,200 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:38:57,236 - INFO -  * Restarting with stat
+2024-04-21 21:38:57,554 - WARNING -  * Debugger is active!
+2024-04-21 21:38:57,559 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:39:09,891 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:39:09,919 - INFO -  * Restarting with stat
+2024-04-21 21:39:10,227 - WARNING -  * Debugger is active!
+2024-04-21 21:39:10,233 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:40:02,521 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:40:02,554 - INFO -  * Restarting with stat
+2024-04-21 21:40:02,864 - WARNING -  * Debugger is active!
+2024-04-21 21:40:02,869 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:40:04,162 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:40:04,190 - INFO -  * Restarting with stat
+2024-04-21 21:40:04,498 - WARNING -  * Debugger is active!
+2024-04-21 21:40:04,504 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:40:05,799 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\unit_tests.py', reloading
+2024-04-21 21:40:05,838 - INFO -  * Restarting with stat
+2024-04-21 21:40:06,150 - WARNING -  * Debugger is active!
+2024-04-21 21:40:06,157 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:42:34,723 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\messages.py', reloading
+2024-04-21 21:42:34,756 - INFO -  * Restarting with stat
+2024-04-21 21:42:35,086 - WARNING -  * Debugger is active!
+2024-04-21 21:42:35,092 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:42:46,392 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\messages.py', reloading
+2024-04-21 21:42:46,427 - INFO -  * Restarting with stat
+2024-04-21 21:42:46,741 - WARNING -  * Debugger is active!
+2024-04-21 21:42:46,746 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:42:48,038 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\messages.py', reloading
+2024-04-21 21:42:48,070 - INFO -  * Restarting with stat
+2024-04-21 21:42:48,386 - WARNING -  * Debugger is active!
+2024-04-21 21:42:48,392 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 21:42:51,929 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\messages.py', reloading
+2024-04-21 21:42:51,969 - INFO -  * Restarting with stat
+2024-04-21 22:27:25,276 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-21 22:27:25,276 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-21 22:27:25,281 - INFO -  * Restarting with stat
+2024-04-21 22:27:25,596 - WARNING -  * Debugger is active!
+2024-04-21 22:27:25,601 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:27:29,840 - INFO - Home endpoint accessed
+2024-04-21 22:27:29,841 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:29] "GET / HTTP/1.1" 200 -
+2024-04-21 22:27:42,287 - INFO - Initiative reset successfully
+2024-04-21 22:27:42,287 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:42] "GET /new-encounter HTTP/1.1" 200 -
+2024-04-21 22:27:53,209 - INFO - Next combatant retrieved
+2024-04-21 22:27:53,210 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:53] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:27:56,510 - INFO - Next combatant retrieved
+2024-04-21 22:27:56,510 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:56] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:27:58,060 - INFO - Next combatant retrieved
+2024-04-21 22:27:58,061 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:58] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:27:59,179 - INFO - Next combatant retrieved
+2024-04-21 22:27:59,180 - INFO - 127.0.0.1 - - [21/Apr/2024 22:27:59] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:28:01,983 - INFO - Next combatant retrieved
+2024-04-21 22:28:01,983 - INFO - 127.0.0.1 - - [21/Apr/2024 22:28:01] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:31:04,766 - INFO - Next combatant retrieved
+2024-04-21 22:31:04,766 - INFO - 127.0.0.1 - - [21/Apr/2024 22:31:04] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:31:07,244 - INFO - Next combatant retrieved
+2024-04-21 22:31:07,244 - INFO - 127.0.0.1 - - [21/Apr/2024 22:31:07] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:31:08,190 - INFO - Next combatant retrieved
+2024-04-21 22:31:08,191 - INFO - 127.0.0.1 - - [21/Apr/2024 22:31:08] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:31:09,036 - INFO - Next combatant retrieved
+2024-04-21 22:31:09,037 - INFO - 127.0.0.1 - - [21/Apr/2024 22:31:09] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:31:54,515 - INFO - Next combatant retrieved
+2024-04-21 22:31:54,517 - INFO - 127.0.0.1 - - [21/Apr/2024 22:31:54] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:32:49,784 - INFO - Initiative reset successfully
+2024-04-21 22:32:49,784 - INFO - 127.0.0.1 - - [21/Apr/2024 22:32:49] "GET /new-encounter HTTP/1.1" 200 -
+2024-04-21 22:33:53,695 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:33:53,747 - INFO -  * Restarting with stat
+2024-04-21 22:33:54,092 - WARNING -  * Debugger is active!
+2024-04-21 22:33:54,097 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:33:55,411 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:33:55,449 - INFO -  * Restarting with stat
+2024-04-21 22:33:55,770 - WARNING -  * Debugger is active!
+2024-04-21 22:33:55,776 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:01,518 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:01,818 - INFO -  * Restarting with stat
+2024-04-21 22:34:02,136 - WARNING -  * Debugger is active!
+2024-04-21 22:34:02,141 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:09,027 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:09,060 - INFO -  * Restarting with stat
+2024-04-21 22:34:09,391 - WARNING -  * Debugger is active!
+2024-04-21 22:34:09,398 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:11,822 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:11,857 - INFO -  * Restarting with stat
+2024-04-21 22:34:12,207 - WARNING -  * Debugger is active!
+2024-04-21 22:34:12,214 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:22,397 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:22,443 - INFO -  * Restarting with stat
+2024-04-21 22:34:22,763 - WARNING -  * Debugger is active!
+2024-04-21 22:34:22,769 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:26,315 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:26,346 - INFO -  * Restarting with stat
+2024-04-21 22:34:26,660 - WARNING -  * Debugger is active!
+2024-04-21 22:34:26,668 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:32,411 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:32,444 - INFO -  * Restarting with stat
+2024-04-21 22:34:32,753 - WARNING -  * Debugger is active!
+2024-04-21 22:34:32,758 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:32,968 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:32,997 - INFO -  * Restarting with stat
+2024-04-21 22:34:33,313 - WARNING -  * Debugger is active!
+2024-04-21 22:34:33,320 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:34:42,201 - INFO - Next combatant retrieved
+2024-04-21 22:34:42,203 - INFO - 127.0.0.1 - - [21/Apr/2024 22:34:42] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:34:45,324 - INFO - Next combatant retrieved
+2024-04-21 22:34:45,324 - INFO - 127.0.0.1 - - [21/Apr/2024 22:34:45] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:34:55,894 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:34:55,926 - INFO -  * Restarting with stat
+2024-04-21 22:37:09,296 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-21 22:37:09,296 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-21 22:37:09,300 - INFO -  * Restarting with stat
+2024-04-21 22:37:09,618 - WARNING -  * Debugger is active!
+2024-04-21 22:37:09,626 - INFO -  * Debugger PIN: 129-239-765
+2024-04-21 22:37:09,744 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:09] "[33mGET /home HTTP/1.1[0m" 404 -
+2024-04-21 22:37:12,380 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:12] "[33mGET /home HTTP/1.1[0m" 404 -
+2024-04-21 22:37:14,918 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:14] "[33mGET /home HTTP/1.1[0m" 404 -
+2024-04-21 22:37:26,004 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:26] "[33mGET /home HTTP/1.1[0m" 404 -
+2024-04-21 22:37:34,873 - INFO - Home endpoint accessed
+2024-04-21 22:37:34,874 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:34] "GET / HTTP/1.1" 200 -
+2024-04-21 22:37:42,765 - INFO - Initiative reset successfully
+2024-04-21 22:37:42,766 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:42] "GET /new-encounter HTTP/1.1" 200 -
+2024-04-21 22:37:52,870 - INFO - Next combatant retrieved
+2024-04-21 22:37:52,871 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:52] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:37:55,468 - INFO - Next combatant retrieved
+2024-04-21 22:37:55,469 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:55] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:37:57,613 - INFO - Next combatant retrieved
+2024-04-21 22:37:57,614 - INFO - 127.0.0.1 - - [21/Apr/2024 22:37:57] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:38:00,335 - INFO - Next combatant retrieved
+2024-04-21 22:38:00,335 - INFO - 127.0.0.1 - - [21/Apr/2024 22:38:00] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:38:02,441 - INFO - Next combatant retrieved
+2024-04-21 22:38:02,442 - INFO - 127.0.0.1 - - [21/Apr/2024 22:38:02] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-21 22:38:05,235 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Tracker\\main.py', reloading
+2024-04-21 22:38:05,268 - INFO -  * Restarting with stat
+2024-04-21 22:38:06,002 - WARNING -  * Debugger is active!
+2024-04-21 22:38:06,007 - INFO -  * Debugger PIN: 129-239-765
+2024-04-22 11:17:50,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:17:50,556 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:17:50,566 - INFO -  * Restarting with stat
+2024-04-22 11:17:50,876 - WARNING -  * Debugger is active!
+2024-04-22 11:17:50,881 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:18:43,224 - INFO - 127.0.0.1 - - [22/Apr/2024 11:18:43] "[33mGET /config/swagger.yaml HTTP/1.1[0m" 404 -
+2024-04-22 11:18:43,674 - INFO - 127.0.0.1 - - [22/Apr/2024 11:18:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-22 11:19:02,698 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:02] "[33mGET /config HTTP/1.1[0m" 404 -
+2024-04-22 11:19:17,893 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:17] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:19:18,112 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "GET /api/doc/static/swagger-ui.css HTTP/1.1" 200 -
+2024-04-22 11:19:18,112 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "GET /api/doc/static/index.css HTTP/1.1" 200 -
+2024-04-22 11:19:18,155 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "GET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2024-04-22 11:19:18,248 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "GET /api/doc/static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2024-04-22 11:19:18,475 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:19:18,475 - INFO - 127.0.0.1 - - [22/Apr/2024 11:19:18] "GET /api/doc/static/favicon-32x32.png HTTP/1.1" 200 -
+2024-04-22 11:20:12,866 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:20:12,916 - INFO -  * Restarting with stat
+2024-04-22 11:20:13,228 - WARNING -  * Debugger is active!
+2024-04-22 11:20:13,228 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:20:14,556 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:20:14,581 - INFO -  * Restarting with stat
+2024-04-22 11:20:14,889 - WARNING -  * Debugger is active!
+2024-04-22 11:20:14,896 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:20:21,109 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:20:21,109 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:20:21,114 - INFO -  * Restarting with stat
+2024-04-22 11:20:21,426 - WARNING -  * Debugger is active!
+2024-04-22 11:20:21,431 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:20:24,986 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:24] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:20:25,206 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:20:25,206 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:20:25,219 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:20:25,221 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:20:25,316 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 11:20:25,326 - INFO - 127.0.0.1 - - [22/Apr/2024 11:20:25] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:21:25,862 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:21:25,891 - INFO -  * Restarting with stat
+2024-04-22 11:21:26,208 - WARNING -  * Debugger is active!
+2024-04-22 11:21:26,214 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:21:33,040 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:21:33,072 - INFO -  * Restarting with stat
+2024-04-22 11:21:33,397 - WARNING -  * Debugger is active!
+2024-04-22 11:21:33,408 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:21:39,128 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:21:39,128 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:21:39,137 - INFO -  * Restarting with stat
+2024-04-22 11:21:39,448 - WARNING -  * Debugger is active!
+2024-04-22 11:21:39,448 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:21:45,456 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:21:45,656 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:21:45,666 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:21:45,676 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:21:45,679 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:21:45,753 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 11:21:45,766 - INFO - 127.0.0.1 - - [22/Apr/2024 11:21:45] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:22:00,221 - INFO - Home endpoint accessed
+2024-04-22 11:22:00,221 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:00] "GET / HTTP/1.1" 200 -
+2024-04-22 11:22:09,358 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:22:09,365 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:22:09,377 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:22:09,378 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:22:09,379 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:22:09,457 - INFO - 127.0.0.1 - - [22/Apr/2024 11:22:09] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:23:51,866 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:23:51,866 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:23:51,866 - INFO -  * Restarting with stat
+2024-04-22 11:23:52,196 - WARNING -  * Debugger is active!
+2024-04-22 11:23:52,196 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:23:59,936 - INFO - 127.0.0.1 - - [22/Apr/2024 11:23:59] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:24:00,141 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:00,146 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:00,146 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:00,156 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:00,232 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 11:24:00,248 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:00] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:24:01,996 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:01] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:24:02,010 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:02,010 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:02,010 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:02,016 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:02,080 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 11:24:02,085 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:02] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:24:42,238 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:24:42,267 - INFO -  * Restarting with stat
+2024-04-22 11:24:42,596 - WARNING -  * Debugger is active!
+2024-04-22 11:24:42,601 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:24:46,085 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:24:46,085 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:24:46,093 - INFO -  * Restarting with stat
+2024-04-22 11:24:46,407 - WARNING -  * Debugger is active!
+2024-04-22 11:24:46,407 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:24:51,526 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:24:51,736 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:51,738 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:24:51,746 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:51,746 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:24:51,826 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 11:24:51,840 - INFO - 127.0.0.1 - - [22/Apr/2024 11:24:51] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 11:25:30,886 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:25:30,917 - INFO -  * Restarting with stat
+2024-04-22 11:25:31,226 - WARNING -  * Debugger is active!
+2024-04-22 11:25:31,236 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:25:49,194 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:25:49,224 - INFO -  * Restarting with stat
+2024-04-22 11:25:49,536 - WARNING -  * Debugger is active!
+2024-04-22 11:25:49,536 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:25:51,944 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:25:51,971 - INFO -  * Restarting with stat
+2024-04-22 11:25:52,296 - WARNING -  * Debugger is active!
+2024-04-22 11:25:52,296 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:25:53,606 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:25:53,636 - INFO -  * Restarting with stat
+2024-04-22 11:25:53,954 - WARNING -  * Debugger is active!
+2024-04-22 11:25:53,959 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:25:55,246 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 11:25:55,266 - INFO -  * Restarting with stat
+2024-04-22 11:25:55,586 - WARNING -  * Debugger is active!
+2024-04-22 11:25:55,600 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:25:59,026 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 11:25:59,026 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 11:25:59,033 - INFO -  * Restarting with stat
+2024-04-22 11:25:59,346 - WARNING -  * Debugger is active!
+2024-04-22 11:25:59,350 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:26:10,488 - INFO - Next combatant retrieved
+2024-04-22 11:26:10,489 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:10] "GET /next-combatant HTTP/1.1" 200 -
+2024-04-22 11:26:15,719 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:15] "[33mGET /api/dopc HTTP/1.1[0m" 404 -
+2024-04-22 11:26:19,589 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:19] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 11:26:19,786 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:19] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 11:26:19,792 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:19] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 11:26:19,799 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:19] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 11:26:19,805 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:19] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 11:26:20,016 - INFO - 127.0.0.1 - - [22/Apr/2024 11:26:20] "GET /api/doc/swagger.json HTTP/1.1" 200 -
+2024-04-22 11:58:35,464 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 11:58:35,513 - INFO -  * Restarting with stat
+2024-04-22 11:58:36,014 - WARNING -  * Debugger is active!
+2024-04-22 11:58:36,020 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 11:59:51,602 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 11:59:51,633 - INFO -  * Restarting with stat
+2024-04-22 11:59:51,957 - WARNING -  * Debugger is active!
+2024-04-22 11:59:51,962 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:02,130 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:02,158 - INFO -  * Restarting with stat
+2024-04-22 12:00:02,480 - WARNING -  * Debugger is active!
+2024-04-22 12:00:02,486 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:04,914 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:04,941 - INFO -  * Restarting with stat
+2024-04-22 12:00:05,243 - WARNING -  * Debugger is active!
+2024-04-22 12:00:05,253 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:15,435 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:15,470 - INFO -  * Restarting with stat
+2024-04-22 12:00:15,803 - WARNING -  * Debugger is active!
+2024-04-22 12:00:15,815 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:21,059 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:21,094 - INFO -  * Restarting with stat
+2024-04-22 12:00:21,403 - WARNING -  * Debugger is active!
+2024-04-22 12:00:21,403 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:27,190 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:27,220 - INFO -  * Restarting with stat
+2024-04-22 12:00:27,543 - WARNING -  * Debugger is active!
+2024-04-22 12:00:27,543 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:35,473 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:35,511 - INFO -  * Restarting with stat
+2024-04-22 12:00:35,824 - WARNING -  * Debugger is active!
+2024-04-22 12:00:35,824 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:37,182 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:37,215 - INFO -  * Restarting with stat
+2024-04-22 12:00:37,539 - WARNING -  * Debugger is active!
+2024-04-22 12:00:37,546 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:39,984 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:40,023 - INFO -  * Restarting with stat
+2024-04-22 12:00:40,334 - WARNING -  * Debugger is active!
+2024-04-22 12:00:40,343 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:42,785 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:42,815 - INFO -  * Restarting with stat
+2024-04-22 12:00:43,138 - WARNING -  * Debugger is active!
+2024-04-22 12:00:43,143 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:44,423 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:44,458 - INFO -  * Restarting with stat
+2024-04-22 12:00:44,767 - WARNING -  * Debugger is active!
+2024-04-22 12:00:44,772 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:49,423 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:49,453 - INFO -  * Restarting with stat
+2024-04-22 12:00:49,768 - WARNING -  * Debugger is active!
+2024-04-22 12:00:49,774 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:52,178 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:52,203 - INFO -  * Restarting with stat
+2024-04-22 12:00:52,523 - WARNING -  * Debugger is active!
+2024-04-22 12:00:52,528 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:00:57,988 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:00:58,019 - INFO -  * Restarting with stat
+2024-04-22 12:00:58,323 - WARNING -  * Debugger is active!
+2024-04-22 12:00:58,333 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:01:00,762 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\Initial.py', reloading
+2024-04-22 12:01:00,783 - INFO -  * Restarting with stat
+2024-04-22 12:01:01,125 - WARNING -  * Debugger is active!
+2024-04-22 12:01:01,131 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:01:34,549 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 12:01:34,574 - INFO -  * Restarting with stat
+2024-04-22 12:01:34,883 - WARNING -  * Debugger is active!
+2024-04-22 12:01:34,893 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:01:37,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 12:01:37,570 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 12:01:37,575 - INFO -  * Restarting with stat
+2024-04-22 12:01:37,893 - WARNING -  * Debugger is active!
+2024-04-22 12:01:37,893 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:55:37,078 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 12:55:37,078 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 12:55:37,082 - INFO -  * Restarting with stat
+2024-04-22 12:55:37,388 - WARNING -  * Debugger is active!
+2024-04-22 12:55:37,400 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:55:44,595 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:44] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 12:55:44,821 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:44] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 12:55:44,828 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:44] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 12:55:44,862 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:44] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 12:55:44,978 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:44] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 12:55:45,490 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:45] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 12:55:45,513 - INFO - 127.0.0.1 - - [22/Apr/2024 12:55:45] "[35m[1mGET /api/doc/swagger.json HTTP/1.1[0m" 500 -
+2024-04-22 12:56:36,351 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 12:56:36,378 - INFO -  * Restarting with stat
+2024-04-22 12:56:36,698 - WARNING -  * Debugger is active!
+2024-04-22 12:56:36,708 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:56:40,785 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:80
+2024-04-22 12:56:40,785 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-22 12:56:40,789 - INFO -  * Restarting with stat
+2024-04-22 12:56:41,114 - WARNING -  * Debugger is active!
+2024-04-22 12:56:41,120 - INFO -  * Debugger PIN: 839-175-660
+2024-04-22 12:56:43,268 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "GET /api/doc HTTP/1.1" 200 -
+2024-04-22 12:56:43,478 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "[36mGET /api/doc/static/index.css HTTP/1.1[0m" 304 -
+2024-04-22 12:56:43,488 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-04-22 12:56:43,491 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "[36mGET /api/doc/static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-04-22 12:56:43,491 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "[36mGET /api/doc/static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-04-22 12:56:43,598 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "GET /api/doc/swagger.json HTTP/1.1" 200 -
+2024-04-22 12:56:43,598 - INFO - 127.0.0.1 - - [22/Apr/2024 12:56:43] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-22 12:58:04,475 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Dummy\\app.py', reloading
+2024-04-22 12:58:04,505 - INFO -  * Restarting with stat
