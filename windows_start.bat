@@ -1,4 +1,4 @@
 @echo off
 
-pip install -r 'initialise\installs.txt'
+pip install -r 'Initialise\Installs.txt'
 python3 'initialise\initial.py'

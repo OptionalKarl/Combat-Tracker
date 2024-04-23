@@ -76,6 +76,7 @@ def update_char(id, name, ac, char_class, initiative, connection = None):
         conn.commit()
         if connection == None:
             conn.close()
+            connection = None
     except Exception as e:
         print(f"Error in update_char: {e}")
         raise e

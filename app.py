@@ -1,30 +1,162 @@
-import logging;
-from flask import Flask, request, jsonify, session;
-import uuid;
-from character_queries import check_for_char, update_char, insert_char, get_char;
-from Initiative_queries import get_next_combatant;
-from swagger_ui import api_doc;
-
+import logging
+from flask import Flask, request, jsonify, session
+import uuid
+from character_queries import check_for_char, update_char, insert_char, get_char
+from Initiative_queries import get_next_combatant
+from swagger_ui import api_doc
 
 logging.basicConfig(filename='log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 app = Flask(__name__)
 
-api_doc(app, config_path='docs\swagger.json', url_prefix='/api/doc', title='API doc')
-
+api_doc(app, config_path='config\swagger.json', url_prefix='/api/doc', title='API doc')
 
 guid = uuid.uuid4()
 app.secret_key = str(guid).encode()
 
+
 def before_first_request():
     session['current_initiative'] = 99
+
+class CharacterService:
+    def __init__(self):
+        pass
+
+    def update_character(self, data):
+        required_fields = ['character_token', 'name', 'ac', 'class', 'initiative']
+        for field in required_fields:
+            if field not in data:
+                return [400,"Missing required fields"]
+
+        # Validate data types and lengths
+        if (not isinstance(data['name'], str) or
+                not isinstance(data['ac'], int) or
+                not isinstance(data['class'], str) or
+                not isinstance(data['initiative'], int) or
+                len(data['name']) > 32 or
+                len(data['class']) > 32):
+            return [400, "Invalid data format"]
+
+        character_token = data.get('character_token')
+        name = data.get('name')
+        ac = data.get('ac')
+        char_class = data.get('class')
+        initiative = data.get('initiative')
+
+        # Call database-related functions to update or insert character
+        try:
+            char_exists, char_id = check_for_char(name)
+            if char_exists:
+                update_char(char_id, name, ac, char_class, initiative)
+                return [200,'"message": "Character updated successfully"']
+            else:
+                insert_char(name, ac, char_class, initiative)
+                return [200,'"message": "Character created successfully"']
+        except Exception as e:
+            return [500, str(e)]
+
+    def get_character(self, data):
+        # Validate input data
+        if 'character_token' not in data or not isinstance(data['character_token'], str):
+            return [400,"Invalid character token"]
+
+        character_token = data.get('character_token')
+
+        # Call database-related function to retrieve character
+        try:
+            character = get_char(character_token)
+            return character, 200
+        except Exception as e:
+            return [500, str(e)]
+
+    def __init__(self):
+        pass
+
+    def update_character(self,data):
+        required_fields = ['character_token','name', 'ac', 'class', 'initiative']
+        for field in required_fields:
+            if field not in data:
+                app.logger.error(f"Missing required field: {field}")
+                return jsonify({"error": f"Missing required field: {field}"}), 400
+
+            if not isinstance(data['name'], str) or \
+            not isinstance(data['ac'], int) or \
+            not isinstance(data['class'], str) or \
+            not isinstance(data['initiative'], int):
+                app.logger.error("Invalid data types")
+                return jsonify({"error": "Invalid data types"}), 400
+
+            # Check field lengths
+            if len(data['name']) > 32 or len(data['class']) > 32:
+                app.logger.error("Name or class exceeds maximum length of 32 characters")
+                return jsonify({"error": "Name or class exceeds maximum length of 32 characters"}), 400
+
+        try:
+            character_token = data.get('character_token')
+            name = data.get('name')
+            ac = data.get('ac')
+            char_class = data.get('class')
+            initiative = data.get('initiative')
+        except Exception as e:
+            app.logger.error('Unable to load character data: %s', str(e))
+            return jsonify({"error": str(e)}), 400
+        
+        try:
+            char_exists, id = check_for_char(name)
+        except Exception as e:
+            app.logger.error('Unable to check for character in DB: %s', str(e))
+            return jsonify({"error": str(e)}), 500
+        
+        if char_exists:
+            try:
+                update_char(id, name, ac, char_class, initiative)
+                app.logger.info('Character %s updated successfully', name)
+                return jsonify({"message": "Character updated successfully"}), 200
+            except Exception as e:
+                app.logger.error('unable to update chracter: %s', e)
+                return jsonify({"message": "Unable to update Character"}), 500
+        else:
+            try:
+                token  = insert_char(name, ac, char_class, initiative)
+                app.logger.info('New character %s added successfully', name)
+                return jsonify({"message": "Character added successfully"}), 200
+            except Exception as e:
+                app.logger.error('New character failed to update: %s', e)
+                return jsonify({"message": f"Character not added, character token: {token}"  }), 500
+        pass
+
+    def get_character(self, data):
+        required_fields = ['character_token']
+        for field in required_fields:
+            if field not in data:
+                app.logger.error(f"Missing required field: {field}")
+                return [400, f"Missing required field: {field}"]
+        if not isinstance(data['character_token'],str):
+            app.logger.error("Invalid data types")
+            return [400,"Invalid data types"]
+        try:
+                character_token = data.get('character_token')
+        except Exception as e:
+            app.logger.error('Unable to load character data: %s', str(e))
+            return [500,str(e)]
+        try:
+            character = get_char(character_token)
+            return [200,character]
+        except Exception as e:
+            app.logger.error('Unable to get character character in DB: %s', str(e))
+            return [500,str(e)]
+        pass
+
+character_service = CharacterService()
+
+
 
 @app.route("/")
 def home():
     app.logger.info('Home endpoint accessed')
     return "Home"
 
-@app.route("/new-encounter", methods = ["POST"])
+@app.route("/new-encounter", methods=["POST"])
 def new_encounter():
     try:
         session['current_initiative'] = 99
@@ -38,7 +170,7 @@ def new_encounter():
 def next():
     initiative = session.get('current_initiative', 99)
     try:
-        result,new_init = get_next_combatant(initiative)
+        result, new_init = get_next_combatant(initiative)
         session['current_initiative'] = new_init
         app.logger.info('Next combatant retrieved')
         return jsonify(result), 200
@@ -46,88 +178,17 @@ def next():
         app.logger.error('Unable to get next combatant')
         return jsonify({"error": str(e)}), 500
 
-@app.route("/character", methods=["POST","GET"])
+@app.route("/character", methods=["POST", "GET"])
 def characters():
     if request.method == "POST":
-        return update_character()
+        response =  character_service.update_character(request.json)
+        
     if request.method == "GET":
-        return jsonify({"Message" : "Feature Build In Progress"})
+        response = character_service.get_character(request.json)
+    if response[0] != 200:
+        response[1] = jsonify({"error" : response[1]})
 
-def update_character():
-    data = request.json
-
-    required_fields = ['character_token','name', 'ac', 'class', 'initiative']
-    for field in required_fields:
-        if field not in data:
-            app.logger.error(f"Missing required field: {field}")
-            return jsonify({"error": f"Missing required field: {field}"}), 400
-
-        if not isinstance(data['name'], str) or \
-           not isinstance(data['ac'], int) or \
-           not isinstance(data['class'], str) or \
-           not isinstance(data['initiative'], int):
-            app.logger.error("Invalid data types")
-            return jsonify({"error": "Invalid data types"}), 400
-
-        # Check field lengths
-        if len(data['name']) > 32 or len(data['class']) > 32:
-            app.logger.error("Name or class exceeds maximum length of 32 characters")
-            return jsonify({"error": "Name or class exceeds maximum length of 32 characters"}), 400
-
-    try:
-        character_token = data.get('character_token')
-        name = data.get('name')
-        ac = data.get('ac')
-        char_class = data.get('class')
-        initiative = data.get('initiative')
-    except Exception as e:
-        app.logger.error('Unable to load character data: %s', str(e))
-        return jsonify({"error": str(e)}), 400
-    
-    try:
-        char_exists, id = check_for_char(name)
-    except Exception as e:
-        app.logger.error('Unable to check for character in DB: %s', str(e))
-        return jsonify({"error": str(e)}), 500
-    
-    if char_exists:
-        try:
-            update_char(id, name, ac, char_class, initiative)
-            app.logger.info('Character %s updated successfully', name)
-            return jsonify({"message": "Character updated successfully"}), 200
-        except Exception as e:
-            app.logger.error('unable to update chracter: %s', e)
-            return jsonify({"message": "Unable to update Character"}), 500
-    else:
-        try:
-            token  = insert_char(character_token, name, ac, char_class, initiative)
-            app.logger.info('New character %s added successfully', name)
-            return jsonify({"message": "Character added successfully"}), 200
-        except Exception as e:
-            app.logger.error('New character failed to update: %s', e)
-            return jsonify({"message": f"Character not added, character token: {token}"  }), 500
-
-def get_character():
-    data = request.json
-    required_fields = ['character_token']
-    for field in required_fields:
-        if field not in data:
-            app.logger.error(f"Missing required field: {field}")
-            return jsonify({"error": f"Missing required field: {field}"}), 400
-    if not isinstance(data['id'], int):
-        app.logger.error("Invalid data types")
-        return jsonify({"error": "Invalid data types"}), 400
-    try:
-            character_token = data.get('character_token')
-    except Exception as e:
-        app.logger.error('Unable to load character data: %s', str(e))
-        return jsonify({"error": str(e)}), 400
-    try:
-        character = get_char(character_token)
-        return jsonify(character)
-    except Exception as e:
-        app.logger.error('Unable to get character character in DB: %s', str(e))
-        return jsonify({"error": str(e)}), 500
+    return response[1] , response[0]
 
 if __name__ == "__main__":
-    app.run(port = 80, debug=True)
+    app.run(port=80, debug=True)

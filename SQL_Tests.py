@@ -25,7 +25,7 @@ class TestMessages(unittest.TestCase):
         # Add test data
         self.cursor.execute('INSERT INTO character (character_token, name, AC, class, Initiative) VALUES ("1", "Test1", 10, "Barbarian", 15)')
         self.cursor.execute('INSERT INTO character (character_token, name, AC, class, Initiative) VALUES ("2", "Test2", 12, "Wizard", 20)')
-        self.cursor.execute('INSERT INTO character (character_token, name, AC, class, Initiative) VALUES (3"", "Test3", 12, "Wizard", 100)')
+        self.cursor.execute('INSERT INTO character (character_token, name, AC, class, Initiative) VALUES ("13", "Test3", 12, "Wizard", 100)')
         self.cursor.execute('INSERT INTO character (character_token, name, AC, class, Initiative) VALUES ("4", "Test4", 13, "Wizard", 100)')
         self.conn.commit()
 
