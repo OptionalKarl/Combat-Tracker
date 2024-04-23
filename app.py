@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, session
 import uuid
 from character_queries import check_for_char, update_char, insert_char, get_char
 from Initiative_queries import get_next_combatant
-from character import CharacterService
+from character import Character
 from swagger_ui import api_doc
 
 logging.basicConfig(filename='log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,7 +21,7 @@ def before_first_request():
     session['current_initiative'] = 99
 
 
-character_service = CharacterService()
+character = Character()
 
 @app.route("/")
 def home():
@@ -53,10 +53,10 @@ def next():
 @app.route("/character", methods=["POST", "GET"])
 def characters():
     if request.method == "POST":
-        response =  character_service.update(request.json)
+        response = character.update(request.json)
         
     if request.method == "GET":
-        response = character_service.get(request.json)
+        response = character.get(request.json)
     if response[0] != 200:
         response[1] = jsonify({"error" : response[1]})
 

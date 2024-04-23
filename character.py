@@ -2,13 +2,13 @@ import json
 from character_queries import check_for_char, update_char, insert_char, get_char
 
 class Character:
-    def __init__(self, character_token, name, ac, char_class, initiative):
+    def __init__(self, character_token = None, name = None, ac= None, char_class= None, initiative= None):
 
-        if len(name) > 32:
+        if name is not None and len(name) > 32:
             raise ValueError("Name exceeds maximum length of 32 characters")
         
         # Validate char_class length (optional)
-        if len(char_class) > 32:
+        if char_class is not None and len(char_class) > 32:
             raise ValueError("Character class exceeds maximum length of 32 characters")
 
 
@@ -18,10 +18,6 @@ class Character:
         self.char_class = char_class
         self.initiative = initiative
         
-class CharacterService:
-    def __init__(self):
-        pass
-
     def update(self, data):
         
         try:
