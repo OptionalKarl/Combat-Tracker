@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from app import CharacterService
+from character import Character
 
 class TestCharacterService(unittest.TestCase):
 
@@ -13,9 +13,9 @@ class TestCharacterService(unittest.TestCase):
             "initiative": 15
         }
 
-        character_service = CharacterService()
+        character = Character()
 
-        character_service.update_character = MagicMock(return_value={"ID" : 1,
+        character.update = MagicMock(return_value={"ID" : 1,
             "character_token": "token",
             "name": "test",
             "ac": 10,
@@ -24,10 +24,10 @@ class TestCharacterService(unittest.TestCase):
         })
 
         # Call the method
-        result = character_service.update_character (data)
+        result = character.update(data)
 
         # Assertions
-        character_service.update_character.assert_called_once_with({
+        character.update.assert_called_once_with({
             "character_token": "token",
             "name": "test",
             "ac": 10,
@@ -38,13 +38,13 @@ class TestCharacterService(unittest.TestCase):
     def test_get_character(self):
         data = "1"
 
-        character_service = CharacterService()
+        character = Character(data)
 
-        character_service.get_character = MagicMock(return_value={"ID": 1,"character_token" : "1", "name": "Test1", "AC": 10, "class": "Barbarian", "Initiative": 15})
+        character.get = MagicMock(return_value={"ID": 1,"character_token" : "1", "name": "Test1", "AC": 10, "class": "Barbarian", "Initiative": 15})
 
-        result = character_service.get_character(data)
+        result = character.get(data)
 
-        character_service.get_character.assert_called_once_with("1")
+        character.get.assert_called_once_with("1")
         self.assertEqual(result, {"ID": 1,"character_token" : "1", "name": "Test1", "AC": 10, "class": "Barbarian", "Initiative": 15})
 
 
