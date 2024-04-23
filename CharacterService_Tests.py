@@ -5,7 +5,6 @@ from app import CharacterService
 class TestCharacterService(unittest.TestCase):
 
     def test_update_character(self):
-        # Mock request.json data
         data = {
             "character_token": "token",
             "name": "test",
@@ -14,10 +13,8 @@ class TestCharacterService(unittest.TestCase):
             "initiative": 15
         }
 
-        # Create an instance of CharacterService
         character_service = CharacterService()
 
-        # Mock the methods used inside update_character
         character_service.update_character = MagicMock(return_value={"ID" : 1,
             "character_token": "token",
             "name": "test",
