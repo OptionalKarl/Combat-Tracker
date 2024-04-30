@@ -14,6 +14,7 @@ class Campaign:
         self.description = description
 
     def create(self,data):
+
         try:
             campaign_data = json.loads(data)
             campaign = Campaign(**campaign_data)
@@ -26,3 +27,4 @@ class Campaign:
             return [200,'"message": "Campaign created successfully"']
         except Exception as e:
            return [500, str(e)]    
+    

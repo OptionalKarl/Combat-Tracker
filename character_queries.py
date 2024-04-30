@@ -122,3 +122,22 @@ def get_char(character_token, connection=None):
         print(f"Error in insert_char: {e}")
         raise e
     
+def get_all_char(character_token, connection=None):
+    if connection == None:
+        conn, cursor = connect_to_database()
+    else:
+        conn = connection.conn
+        cursor = connection.cursor
+    query = '''
+        Select * from character where character_token = {character_token}
+        '''.format(character_token = character_token)
+    try:
+        cursor.execute(query)
+        character = cursor.fetchone()
+        if connection == None:
+            conn.close()
+        return character
+    except Exception as e:
+        print(f"Error in insert_char: {e}")
+        raise e
+    

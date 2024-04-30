@@ -1,230 +1,153 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "D&D Character Tracker API",
-    "description": "API for managing characters, initiative tracking, and campaign encounters in a D&D game",
-    "version": "1.2"
+    "title": "Character API",
+    "version": "3.0"
   },
-  "basePath": "/api",
   "paths": {
-    "/": {
-      "get": {
-        "summary": "Home",
-        "description": "Default endpoint",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "string"
-            }
-          }
-        }
-      }
-    },
-    "/new-encounter": {
+    "/single-character": {
       "post": {
-        "summary": "Reset Initiative",
-        "description": "Reset initiative for a new encounter",
-        "responses": {
-          "200": {
-            "description": "Initiative Reset Successful",
-            "schema": {
-              "type": "string",
-              "example": "Message: Initiative Reset"
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Internal Server Error: <error_message>"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/next-combatant": {
-      "get": {
-        "summary": "Get Next Combatant",
-        "description": "Retrieve the next combatant based on current initiative",
-        "responses": {
-          "200": {
-            "description": "Next Combatant Retrieved Successfully",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "ID": {
-                  "type": "integer"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "AC": {
-                  "type": "integer"
-                },
-                "class": {
-                  "type": "string"
-                },
-                "Initiative": {
-                  "type": "integer"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Internal Server Error: <error_message>"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/character": {
-      "post": {
-        "summary": "Update Character",
-        "description": "Update or insert a character's information",
-        "consumes": [
-          "application/json"
-        ],
+        "summary": "Add or update a single character",
+        "description": "Add or update a single character",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "parameters": [
           {
             "in": "body",
             "name": "character",
-            "description": "Character information to be updated or inserted",
+            "description": "Character data",
+            "required": true,
             "schema": {
-              "type": "object",
-              "properties": {
-                "character_token": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "ac": {
-                  "type": "integer"
-                },
-                "class": {
-                  "type": "string"
-                },
-                "initiative": {
-                  "type": "integer"
-                }
-              }
+              
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Character Updated or Inserted Successfully",
+            "description": "Character added or updated successfully",
             "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Character updated successfully"
-                }
-              }
+              "type": "string"
             }
           },
           "400": {
-            "description": "Bad Request",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Missing required field: <field_name>"
-                }
-              }
-            }
-          },         
+            "description": "Invalid request"
+          },
           "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Internal Server Error: <error_message>"
-                }
-              }
-            }
+            "description": "Internal server error"
           }
         }
       },
       "get": {
-        "summary": "Get Character",
-        "description": "Retrieve character information by ID",
+        "summary": "Get a single character",
+        "description": "Retrieve a single character by token",
+        "produces": ["application/json"],
         "parameters": [
           {
             "in": "query",
             "name": "character_token",
-            "description": "ID of the character to retrieve",
+            "description": "Character token",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "Character Retrieved Successfully",
+            "description": "Character retrieved successfully",
             "schema": {
-              "type": "object",
-              "properties": {
-                "ID": {
-                  "type": "integer"
-                },
-                "character_token": {
-                  "type": "string" 
-                },
-                "name": {
-                  "type": "string"
-                },
-                "AC": {
-                  "type": "integer"
-                },
-                "class": {
-                  "type": "string"
-                },
-                "Initiative": {
-                  "type": "integer"
-                }
               }
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/characters": {
+      "post": {
+        "summary": "Add multiple characters",
+        "description": "Add multiple characters in bulk",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "characters",
+            "description": "List of characters to add",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Characters added successfully",
+            "schema": {
+              "type": "string"
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid request"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all characters",
+        "description": "Retrieve all characters",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Characters retrieved successfully",
             "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Missing required field: id"
-                }
+              "type": "array",
+              "items": {
+                
               }
             }
           },
           "500": {
-            "description": "Internal Server Error",
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/new-encounter": {
+      "post": {
+        "summary": "Reset initiative for a new encounter",
+        "description": "Reset initiative for a new encounter",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Initiative reset successfully",
             "schema": {
-              "type": "object",
-              "properties": {
-                "error": {
-                  "type": "string",
-                  "example": "Internal Server Error: <error_message>"
-                }
-              }
+              "type": "string"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/next-combatant": {
+      "get": {
+        "summary": "Get next combatant in initiative order",
+        "description": "Get next combatant in initiative order",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Next combatant retrieved successfully",
+            "schema": {
+              "type": "string"
             }
           }
         }
@@ -232,3 +155,5 @@
     }
   }
 }
+
+    

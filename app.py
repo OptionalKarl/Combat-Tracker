@@ -11,7 +11,7 @@ logging.basicConfig(filename='log.txt', level=logging.DEBUG, format='%(asctime)s
 
 app = Flask(__name__)
 
-api_doc(app, config_path='config\swagger.json', url_prefix='/api/doc', title='API doc')
+api_doc(app, config_path='docs\swagger.json', url_prefix='/api/doc', title='API doc')
 
 guid = uuid.uuid4()
 app.secret_key = str(guid).encode()
@@ -50,8 +50,8 @@ def next():
         app.logger.error('Unable to get next combatant')
         return jsonify({"error": str(e)}), 500
 
-@app.route("/character", methods=["POST", "GET"])
-def characters():
+@app.route("/single-character", methods=["POST", "GET"])
+def single_character():
     if request.method == "POST":
         response = character.update(request.json)
         
@@ -59,6 +59,19 @@ def characters():
         response = character.get(request.json)
     if response[0] != 200:
         response[1] = jsonify({"error" : response[1]})
+
+    return response[1] , response[0]
+
+@app.route("/characters", methods=["POST", "GET"])
+def characters():
+    if request.method == "POST":
+            response = character.bulk(request.json)
+
+    if request.method == "GET":
+            response = character.get_all()
+
+    if response[0] != 200:
+            response[1] = jsonify({"error" : response[1]})
 
     return response[1] , response[0]
 

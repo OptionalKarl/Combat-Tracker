@@ -1,5 +1,5 @@
 import json
-from character_queries import check_for_char, update_char, insert_char, get_char
+from character_queries import check_for_char, update_char, insert_char, get_char,get_all_char
 
 class Character:
     def __init__(self, character_token = None, name = None, ac= None, char_class= None, initiative= None):
@@ -56,3 +56,39 @@ class Character:
             return [200, character]
         except Exception as e:
             return [500, str(e)]
+        
+    def bulk(self,data):
+        try:
+            characters = []
+
+            # Iterate through the JSON data
+            for character_data in data:
+                name = character_data.get('name')
+                ac = character_data.get('ac')
+                char_class = character_data.get('char_class')
+                initiative = character_data.get('initiative')
+
+                # Create a new Character object
+                character = Character(None,name, ac, char_class, initiative)
+
+                # Append the character to the list
+                characters.append(character)
+        except ValueError:
+            return [500, "Data items not valid"]
+        except Exception as e:
+            return [500, str(e)]
+        
+        for character in characters:
+             insert_char(character.character_token,character.name,character.AC,character.char_class,character.initiative)
+        return [200, "Characters Inserted"]
+    
+    def get_all(self):
+        try:
+            characters = get_all_char()
+            return [200, characters]
+        except Exception as e:
+            return [500, str(e)]
+
+
+        
+        
