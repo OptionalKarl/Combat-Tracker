@@ -29,3 +29,7 @@
 2024-04-30 16:13:19,314 - INFO - 127.0.0.1 - - [30/Apr/2024 16:13:19] "[36mGET /api/doc/static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
 2024-04-30 16:13:19,829 - INFO - 127.0.0.1 - - [30/Apr/2024 16:13:19] "GET /api/doc/swagger.json HTTP/1.1" 200 -
 2024-04-30 16:13:19,832 - INFO - 127.0.0.1 - - [30/Apr/2024 16:13:19] "[36mGET /api/doc/static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-04-30 19:23:56,523 - INFO -  * Detected change in 'D:\\Storage\\0 - Development\\VSCode\\Combat Tracker\\character.py', reloading
+2024-04-30 19:23:56,561 - INFO -  * Restarting with stat
+2024-04-30 19:23:56,899 - WARNING -  * Debugger is active!
+2024-04-30 19:23:56,904 - INFO -  * Debugger PIN: 839-175-660
