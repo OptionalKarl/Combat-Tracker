@@ -1,5 +1,4 @@
 import sqlite3;
-import random;
 import uuid;
 
 def connect_to_database():
@@ -122,3 +121,4 @@ def get_char(character_token, connection=None):
     except Exception as e:
         print(f"Error in insert_char: {e}")
         raise e
+    

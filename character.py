@@ -29,20 +29,16 @@ class Character:
             return [500, str(e)]
         
 
-        character_token = data.get('character_token')
-        name = data.get('name')
-        ac = data.get('ac')
-        char_class = data.get('class')
-        initiative = data.get('initiative')
+
 
         # Call database-related functions to update or insert character
         try:
-            char_exists, char_id = check_for_char(name)
+            char_exists, char_id = check_for_char(character.name)
             if char_exists:
-                update_char(char_id, name, ac, char_class, initiative)
+                update_char(char_id, character.name, character.ac, character.char_class, character.initiative)
                 return [200,'Character updated successfully"']
             else:
-                insert_char(name, ac, char_class, initiative)
+                insert_char(character.name, character.ac, character.char_class, character.initiative)
                 return [200,'"message": "Character created successfully"']
         except Exception as e:
             return [500, str(e)]
