@@ -21,3 +21,7 @@ if you see:
 
 
    the app should now be running on **localhost:9000**
+
+control + c to terminate the app.
+This should end the venv if it doesnt run 
+`$ deactivate`
