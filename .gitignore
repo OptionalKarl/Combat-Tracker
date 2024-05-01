@@ -1,5 +1,6 @@
-./venv
+AOIV./venv
 __pycache__
 Tracker.db
 log.txt
 ./idea
+

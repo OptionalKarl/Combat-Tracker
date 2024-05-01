@@ -5,15 +5,13 @@ import uuid
 from character_queries import check_for_char, update_char, insert_char, get_char
 from Initiative_queries import get_next_combatant
 from character import Character
-from swagger_ui import api_doc
+
 from flask_cors import CORS
 
 logging.basicConfig(filename='log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 app = Flask(__name__)
 CORS(app)
-
-api_doc(app, config_path='config\swagger.json', url_prefix='/api/doc', title='API doc')
 
 guid = uuid.uuid4()
 app.secret_key = str(guid).encode()
@@ -65,4 +63,4 @@ def characters():
     return response[1] , response[0]
 
 if __name__ == "__main__":
-    app.run(port=80, debug=True)
+    app.run(port=9000, debug=True)

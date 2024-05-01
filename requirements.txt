@@ -1,3 +1,4 @@
-flask
-flask_cors
-swagger_ui
+Flask==1.1.4
+Flask-Cors==4.0.0
+flask-restplus==0.13.0
+Werkzeug==1.0.1
